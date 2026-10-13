@@ -1,0 +1,36 @@
+{
+	"$schema": "./node_modules/@emdash-cms/plugin-cli/schemas/emdash-plugin.schema.json",
+
+	"slug": "emdash-mailerlite",
+	"publisher": "did:plc:wlshattmcjplayfxlgzbhxvk", // ecommerceave.com
+
+	"license": "MIT",
+	"author": { "name": "eCommerce Ave" },
+	"security": { "email": "hello@ecommerceave.com" },
+	"repo": "https://github.com/ecommerceave/emdash-mailerlite",
+
+	// Trust contract — what runtime APIs the plugin asks for.
+	// Empty arrays mean no extra privileges beyond logging,
+	// KV, and route/hook registration. Changing these between
+	// releases requires a version bump because installed
+	// users have consented to the old contract.
+	"capabilities": ["network:request"],
+	"allowedHosts": ["connect.mailerlite.com"],
+	"storage": {},
+
+	"admin": {
+		"settingsSchema": {
+			"mailerliteApiKey": {
+				"label": "MailerLite API Key",
+				"description": "Enter your MailerLite API key to connect your account.",
+				"type": "secret"
+			}
+		},
+		"pages": [
+			{
+				"path": "/mailerlite",
+				"label": "MailerLite"
+			}
+		]
+	}
+}
