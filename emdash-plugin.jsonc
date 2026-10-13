@@ -5,7 +5,25 @@
 	"publisher": "did:plc:wlshattmcjplayfxlgzbhxvk", // ecommerceave.com
 
 	"license": "MIT",
-	"author": { "name": "eCommerce Ave" },
+
+	"name": "MailerLite for EmDash",
+	"description": "Connect MailerLite to EmDash to view subscribers, groups, campaigns, and signup forms directly from your CMS dashboard.",
+	"keywords": [
+		"mailerlite",
+		"email marketing",
+		"subscribers",
+		"campaigns",
+		"signup forms"
+	],
+	"sections": {
+		"description": "MailerLite for EmDash connects your EmDash website with MailerLite, allowing you to access email marketing information directly from your CMS dashboard.\n\n### Features\n\n- View your MailerLite subscribers.\n- Browse subscriber groups.\n- View email marketing campaigns.\n- Access signup forms.\n- Connect securely using your MailerLite API key.\n\n### Getting Started\n\nInstall the plugin and configure your MailerLite API key in the EmDash admin dashboard. Once connected, you can view your MailerLite information without leaving EmDash.\n\n### About eCommerce Ave\n\nDeveloped by [eCommerce Ave](https://ecommerceave.com), creating practical integrations and e-commerce tools for EmDash."
+	},
+	
+	"author": {
+	"name": "eCommerce Ave",
+	"url": "https://ecommerceave.com"
+	},
+
 	"security": { "email": "hello@ecommerceave.com" },
 	"repo": "https://github.com/ecommerceave/emdash-mailerlite",
 
